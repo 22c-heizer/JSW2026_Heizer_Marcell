@@ -128,3 +128,19 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.paper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  background-color: white;
+}
+
+.paper > h2,
+.paper > p {
+  grid-column: 1 / -1;
+}
+
+.paper .card {
+  width: 100% !important;
+}
